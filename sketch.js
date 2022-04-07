@@ -23,7 +23,7 @@ b2= Bodies.rectangle(100,200,50,50);
 World.add(world,b2)
 
   var ball_options = {
-    restitution : 0.95,
+    restitution : 0.95 ,
     frictionAir : 0.01
   }
 
@@ -31,9 +31,9 @@ World.add(world,b2)
     isStatic : true
   }
 
-  var block3_options={
-    restituition : 0.95
-    isStatic:false
+  var bloc3_options={
+    restituition : 0.75 ,
+    frictionAir: 0.03
   }
   
 
@@ -43,7 +43,7 @@ World.add(world,b2)
   ground = Bodies.rectangle(200,390,400,20,ground_options);
   World.add(world,ground);
   
-  block3 = Bodies.rectangle(100,200,100,50,block3_options);
+  block3 = Bodies.rectangle(100,200,100,50,bloc3_options);
   World.add(world,ground)
  
   
